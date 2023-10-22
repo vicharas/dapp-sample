@@ -69,7 +69,7 @@ const RegisterETHSend = () => {
       <div className="form-row">
         <span>Amount of ETH to send</span>
         <input type="number" onChange={(event) => setEthAmount(event.target.value)}></input>
-        <span className="hint-text">*An additional Ξ0.01 is required for the bot to execute the future transaction. The remainder will be sent back to you if there is any.</span>
+        <span className="hint-text">*An additional 0.01 ETH is required for the bot to execute the future transaction. The remainder will be sent back to you if there is any.</span>
       </div>
       <div className="form-row">
         <span>Date and time of future transaction</span>
