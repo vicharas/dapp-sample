@@ -37,6 +37,7 @@ header nav {
   align-items: center;
   font-family: Consolas, 'Courier New', Courier, monospace;
   font-weight: bold;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -86,7 +87,8 @@ header .account-info .wallet-address {
 
 main {
   max-width: 480px;
-  background: white;
+  background: rgb(24 26 27);
+  color: white;
   padding: 40px;
   border-radius: 10px;
   margin: auto;
@@ -119,6 +121,8 @@ main h1 {
 
 .form-row > input,
 .react-datetime-picker {
+  background: black;
+  color: white;
   box-sizing: border-box;
   padding: 10px;
   border: 2px solid var(--main-color);
@@ -127,7 +131,7 @@ main h1 {
 
 .form-row > input,
 .react-datetime-picker input {
-  color: var(--main-color);
+  color: white;
 }
 
 .react-datetime-picker__wrapper {
