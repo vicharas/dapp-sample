@@ -51,15 +51,6 @@ const RegisterETHSend = () => {
   }
 
   useEffect(() => {
-    if (time && receiverAddress) {
-      // get call data when both time and receiverAddress are changed by user input
-      // no checking for validity of receiver address input because this is just a poc
-      const _callData = getRegisterETHSendCallData(time, receiverAddress);
-      setCallData(_callData);
-    }
-  }, [time, receiverAddress]);
-
-  useEffect(() => {
     // save timestamp in ms as BigNumber for contract call
     setTime(BigNumber.from(new Date(dateTimeValue).getTime()));
   }, [dateTimeValue]);
