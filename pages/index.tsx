@@ -16,14 +16,16 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>Future Transaction Bot</title>
+        <title>OrangeDeFi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header>
         <nav>
-          <Link href="/">
-            <a>FutureTx</a>
+          <Link href="/"><div className="logo">
+            <div>
+              <img src="orange-logo.svg" /></div><div className="logo-text"><a>OrangeDeFi</a></div>
+            </div>
           </Link>
           <div className="account-info">
             <ETHBalance />
@@ -33,13 +35,18 @@ function Home() {
       </header>
 
       <main>
-        <h1>
-          Create Future Transaction
-        </h1>
         {isConnected && (
+          <>
+          <h1>
+            Future Transaction
+          </h1>
           <section>
-            <RegisterETHSend/>
+            <RegisterETHSend />
           </section>
+          </>
+        )}
+        {!isConnected && (
+            <p>Ready to pulp your financial stress and zest up your assets?</p>
         )}
       </main>
 
